@@ -4,7 +4,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/secureconnect
     username: postgres
-    password: Dimple22
+    password: ${DB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
@@ -14,5 +14,5 @@ server:
   port: 8080
 
 jwt:
-  secret: PASTE_YOUR_GENERATED_KEY_HERE
+  secret: ${JWT_SECRET}
   expiration: 86400000
