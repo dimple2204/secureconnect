@@ -1,4 +1,4 @@
-package com.dimple.secureconnect.service;
+package com.dimple.secureconnect.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
