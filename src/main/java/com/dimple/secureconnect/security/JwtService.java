@@ -42,7 +42,7 @@ public class JwtService {
                 && !isTokenExpired(token);
     }
 
-    private String extractEmail(String token) {
+    String extractEmail(String token) {
 
         return extractClaim(token, Claims::getSubject);
     }
